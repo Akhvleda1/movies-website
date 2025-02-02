@@ -5,8 +5,9 @@ class HeaderComponent extends HTMLElement {
             <section class="header-section">
             <div class="header-div">
                 <div class="logo-nav-wrapper">
-                    <img class="header-logo" src="images/logo.png" alt="logo" />
-
+                    <a href="index.html">
+                        <img class="header-logo" src="images/logo.png" alt="logo" />
+                    </a>
                     <nav class="header-nav">
                         <ul class="header-ul">
                             <li><a href="index.html">Home</a></li>
