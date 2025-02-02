@@ -610,6 +610,35 @@ footer-component {
     text-align: center;
 }
 
+/* Cookies notification  */
+.cookie-notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+    z-index: 1000;
+}
+.cookie-notification button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+.cookie-notification button:hover {
+    background-color: #e67e22;
+}
+
+
 
 @media (min-width: 1024px) {
     .off-screen-menu.open {

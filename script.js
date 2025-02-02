@@ -331,4 +331,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     handleSearch(".search-input", ".search-button");
     handleSearch(".os-search-input", ".os-search-button");
+
+
+    // Cookies notification
+    const cookieBanner = document.getElementById("cookie-notification");
+    const acceptButton = document.getElementById("accept-cookie");
+    if (!Cookies.get("cookiesAccepted")) {
+        cookieBanner.style.display = "block";
+    }
+    acceptButton.addEventListener("click", function () {
+        Cookies.set("cookiesAccepted", "true", { expires: 30, path: "/" });
+        cookieBanner.style.display = "none";
+    });
 });
